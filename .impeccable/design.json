@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T16:20:09.599365+00:00",
+  "title": "Design System: New Gold Gym 2.0",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.00946 159.21)",
+          "oklch(26.43% 0.00946 159.21)",
+          "oklch(37.86% 0.00946 159.21)",
+          "oklch(49.29% 0.00946 159.21)",
+          "oklch(60.71% 0.00946 159.21)",
+          "oklch(72.14% 0.00946 159.21)",
+          "oklch(83.57% 0.00946 159.21)",
+          "oklch(95% 0.00946 159.21)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Gold",
+        "tonalRamp": [
+          "oklch(15% 0.09988 77.59)",
+          "oklch(26.43% 0.09988 77.59)",
+          "oklch(37.86% 0.09988 77.59)",
+          "oklch(49.29% 0.09988 77.59)",
+          "oklch(60.71% 0.09988 77.59)",
+          "oklch(72.14% 0.09988 77.59)",
+          "oklch(83.57% 0.09988 77.59)",
+          "oklch(95% 0.09988 77.59)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "tonalRamp": [
+          "oklch(15% 0.01436 84.58)",
+          "oklch(26.43% 0.01436 84.58)",
+          "oklch(37.86% 0.01436 84.58)",
+          "oklch(49.29% 0.01436 84.58)",
+          "oklch(60.71% 0.01436 84.58)",
+          "oklch(72.14% 0.01436 84.58)",
+          "oklch(83.57% 0.01436 84.58)",
+          "oklch(95% 0.01436 84.58)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.01508 84.59)",
+          "oklch(26.43% 0.01508 84.59)",
+          "oklch(37.86% 0.01508 84.59)",
+          "oklch(49.29% 0.01508 84.59)",
+          "oklch(60.71% 0.01508 84.59)",
+          "oklch(72.14% 0.01508 84.59)",
+          "oklch(83.57% 0.01508 84.59)",
+          "oklch(95% 0.01508 84.59)"
+        ]
+      },
+      "dark": {
+        "role": "neutral",
+        "displayName": "Dark",
+        "tonalRamp": [
+          "oklch(15% 0.01113 151.08)",
+          "oklch(26.43% 0.01113 151.08)",
+          "oklch(37.86% 0.01113 151.08)",
+          "oklch(49.29% 0.01113 151.08)",
+          "oklch(60.71% 0.01113 151.08)",
+          "oklch(72.14% 0.01113 151.08)",
+          "oklch(83.57% 0.01113 151.08)",
+          "oklch(95% 0.01113 151.08)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01478 149.29)",
+          "oklch(26.43% 0.01478 149.29)",
+          "oklch(37.86% 0.01478 149.29)",
+          "oklch(49.29% 0.01478 149.29)",
+          "oklch(60.71% 0.01478 149.29)",
+          "oklch(72.14% 0.01478 149.29)",
+          "oklch(83.57% 0.01478 149.29)",
+          "oklch(95% 0.01478 149.29)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.01369 149.53)",
+          "oklch(26.43% 0.01369 149.53)",
+          "oklch(37.86% 0.01369 149.53)",
+          "oklch(49.29% 0.01369 149.53)",
+          "oklch(60.71% 0.01369 149.53)",
+          "oklch(72.14% 0.01369 149.53)",
+          "oklch(83.57% 0.01369 149.53)",
+          "oklch(95% 0.01369 149.53)"
+        ]
+      },
+      "rating-empty": {
+        "role": "neutral",
+        "displayName": "Inactive rating star",
+        "purpose": "Scoped only to inactive rating stars.",
+        "tonalRamp": [
+          "oklch(15% 0.014 150)",
+          "oklch(26.43% 0.014 150)",
+          "oklch(37.86% 0.014 150)",
+          "oklch(49.29% 0.014 150)",
+          "oklch(60.71% 0.014 150)",
+          "oklch(72.14% 0.014 150)",
+          "oklch(83.57% 0.014 150)",
+          "oklch(95% 0.014 150)"
+        ]
+      }
+    },
+    "motion": [
+      {
+        "name": "mobile-tab-crossfade",
+        "value": "120ms",
+        "purpose": "Implemented destination opacity crossfade; static under reduced motion."
+      },
+      {
+        "name": "dialog-fade",
+        "value": "200ms",
+        "purpose": "Photo dialog opacity; reduced fade uses 120ms."
+      },
+      {
+        "name": "sheet-spring",
+        "value": "type: spring; bounce: 0; visualDuration: 0.3",
+        "purpose": "Shared sheet entrance/exit; reduced-motion travel is removed."
+      },
+      {
+        "name": "sheet-release",
+        "value": "stiffness: 350; damping: 36",
+        "purpose": "Canceled drag returns the sheet to rest."
+      },
+      {
+        "name": "sheet-dismiss",
+        "value": "offset > 100px or offset > 10px and velocity > 500px/s",
+        "purpose": "Mobile drag-handle dismissal; disabled on desktop and reduced motion."
+      }
+    ],
+    "shadows": [],
+    "breakpoints": [
+      {
+        "name": "narrow-mobile",
+        "value": "360px",
+        "purpose": "Below this width, smaller heading and stacked rating-only cards."
+      },
+      {
+        "name": "tablet-preview",
+        "value": "641px",
+        "purpose": "Larger image previews within the mobile shell."
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "desktop-wide",
+        "value": "1280px",
+        "purpose": "Full desktop display ramp."
+      }
+    ],
+    "provenance": {
+      "source": "Shipped public source, finished captures and quality bar in .impeccable/review/public; historical native Penpot references remain in PRODUCT.md.",
+      "components": "Self-contained visual excerpts translated from shipped CSS; fonts must be available. Application focus, dialog and routing runtime remains in source.",
+      "tonalRamps": "Synthesized OKLCH strips for the documentation panel; not native Penpot tokens or approved additional surface colors.",
+      "responsive": "Implemented desktop boundary is 1024px. Native 390\u00d7844 and 1440\u00d74464 dimensions remain historical reference sizes.",
+      "nativeInventory": "38 components, 7 colors, 8 typography styles, 17 tokens. Base 13 retained; new-gold/mobile adds 3 radius tokens and 1 inset token.",
+      "enquiryPreview": "Historical native sheet preview remains in design-previews; the implemented enquiry uses the confirmed phone and a selected-plan WhatsApp draft."
+    },
+    "typographyMeta": {
+      "mobile-title": {
+        "displayName": "Mobile / Title",
+        "purpose": "Implemented Teko mobile main titles; reduces below 360px."
+      },
+      "mobile-tab": {
+        "displayName": "Mobile / Tab",
+        "purpose": "Selected bottom-tab labels."
+      },
+      "display": {
+        "displayName": "Desktop display",
+        "purpose": "Teko 500 desktop hero, reducing at the compact desktop breakpoint."
+      },
+      "headline": {
+        "displayName": "Website headline",
+        "purpose": "Teko 500 desktop section heading hierarchy."
+      },
+      "title": {
+        "displayName": "Membership price",
+        "purpose": "Desktop price amount; smaller amounts in mobile plan cards."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Inter Tight supporting text across public layouts."
+      },
+      "body-large": {
+        "displayName": "Large body",
+        "purpose": "Desktop supporting copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Inter Tight 600 at 16px for primary and secondary actions in both layouts."
+      },
+      "admin-body": {
+        "displayName": "Admin / Body",
+        "purpose": "Recurring Inter Tight body treatment on the delivered owner boards; scoped to admin, not a new native library style."
+      },
+      "admin-summary": {
+        "displayName": "Admin / Summary",
+        "purpose": "Recurring numerical summary treatment on Overview and Payments; scoped to admin, not a new native library style."
+      },
+      "admin-title": {
+        "displayName": "Admin / Root Title",
+        "purpose": "Teko root H1 treatment on all 31 admin boards; manual native override, not a registered library style. Public website typography remains unchanged."
+      },
+      "admin-desktop-summary": {
+        "displayName": "Admin Desktop / Summary",
+        "purpose": "Recurring desktop numerical summaries; extracted native treatment, not a registered Penpot style. Mobile admin-summary remains unchanged."
+      },
+      "hero-body": {
+        "displayName": "Hero description",
+        "purpose": "Inter Tight 500 at 18px/1.55, supporting the Teko desktop hero."
+      },
+      "navigation": {
+        "displayName": "Desktop navigation",
+        "purpose": "Inter Tight 500 at 16px/1.5 in header and footer."
+      },
+      "caption": {
+        "displayName": "Hero image caption",
+        "purpose": "Inter Tight 400 at 15px/1.5 for a readable supporting caption."
+      }
+    },
+    "adminMobile": {
+      "scope": "Admin \u2014 Mobile only; public website narrative, components, palette and library inventory remain unchanged.",
+      "mode": "Operate",
+      "source": {
+        "manifest": "design-previews/admin-mobile-manifest.json",
+        "exports": "design-previews/admin-mobile-*.png",
+        "contentProvenance": "PRODUCT.md",
+        "acceptanceRules": "design-previews/admin-mobile-rules.md"
+      },
+      "primitiveRefs": {
+        "palette": [
+          "colors.ink",
+          "colors.gold",
+          "colors.cream",
+          "colors.muted",
+          "colors.dark",
+          "colors.surface",
+          "colors.line"
+        ],
+        "title": "typography.admin-title",
+        "body": "typography.admin-body",
+        "summary": "typography.admin-summary",
+        "controlRadius": "rounded.mobile-control",
+        "panelRadius": "rounded.mobile-panel",
+        "screenInset": "spacing.mobile-inset"
+      },
+      "narrative": {
+        "overview": "Operate mode across 31 editable native boards: seven main destinations plus member/payment forms, correction/archive overlays, three reminder audiences, recipient/results examples and a 29-state recovery reference. Teko root titles pair with Inter Tight copy/data and the existing flat charcoal/gold identity.",
+        "rules": [
+          {
+            "name": "Labeled State",
+            "body": "Keep paid/unpaid/overdue, present/not marked, sent/failed/skipped, exclusion reasons and chart values explicit in text.",
+            "section": "colors"
+          },
+          {
+            "name": "Root Title",
+            "body": "Use the admin Teko role for root H1s; retain Inter Tight for child headings, data and controls. Long root titles wrap with supporting content moved below.",
+            "section": "typography"
+          },
+          {
+            "name": "Visible Quantity",
+            "body": "Retain every ranking/weekday number including zero and distinguish audience totals, exclusions, ready recipients and result counts.",
+            "section": "components"
+          }
+        ],
+        "dos": [
+          "Preserve the existing palette, vector brand, mobile shape/inset rules and minimum target size.",
+          "Retain persistent field labels, helper text, period/date context, exclusion reasons and separate result categories."
+        ],
+        "donts": [
+          "Do not infer live form validation, a database, a fee engine, actual messaging delivery, responsive desktop layouts or new native library registrations."
+        ],
+        "notCanonized": "Synthetic people, phones, fees, dates, receipts, chart values and message outcomes; one-off chart geometry; business acceptance rules. These are examples or future implementation requirements, not universal visual tokens. Final independent review: SHIP with no material fixes; no craft-floor defect promoted into the system."
+      },
+      "layout": "Main/supporting screens are 390\u00d7844; overlays are 390px wide with content-specific 520/400/360px heights; the 1894\u00d71424 state reference is a presentation board. Main bottom bars retain five 64px-high targets, 8px top space and 24px bottom safe area within 96px. Wired targets meet 44\u00d744px. Supporting screens use back/cancel controls. Long H1s wrap and content follows below. Dimensions are not responsive breakpoints.",
+      "componentPatterns": [
+        "Vector brand and Owner badge on main screens; back/title headers on supporting screens",
+        "Compact numerical summaries and divider-separated paged lists",
+        "Labeled member/payment fields with required marks, helper text and separate reminder-permission checkbox",
+        "Correction/archive confirmation sheets and retained receipt/history context",
+        "Five labeled main tabs plus supporting screen/overlay navigation",
+        "Three reminder audience selectors, recipient exclusion review and sent/failed/skipped results",
+        "Explicitly labeled charts and attendance calendar",
+        "29 visual validation/recovery examples"
+      ],
+      "nativeDelivery": {
+        "boards": 31,
+        "shapes": 1729,
+        "textLayers": 779,
+        "navigationLinks": 122,
+        "stateExamples": 29,
+        "rootTitlesVerified": 31,
+        "brokenDestinations": 0,
+        "undersizedInteractiveTargets": 0,
+        "rootContainmentViolations": 0,
+        "newLibraryColors": 0,
+        "newLibraryTokens": 0,
+        "newRegisteredComponents": 0,
+        "newLibraryTypographyStyles": 0
+      },
+      "interactionScope": "Historical native prototype navigation and example overlays only; its fields do not execute validation, persistence or messaging. The shipped /admin application implements forms, server validation, fee calculations, JSON receipts and simulated reminders. No real WhatsApp messages are sent.",
+      "stateCoverage": "29 designed validation/recovery examples include duplicate/invalid member input, attendance/date corrections, partial/older balances, save failure/concurrency, empty results, month-end renewal, archive, reminder exclusions/setup/opt-out, retry/duplicate protection, long names and Undo. These are static visual examples; no additional shared motion or focus system is inferred.",
+      "nativeRegistration": "The existing eight library typography styles and 17 tokens remain unchanged. Admin H1s use a manual native Teko override described by the extracted documentation role; fills and radii reuse existing tokens.",
+      "evidenceScope": "Historical editable native prototype only. Current application behavior and responsive styles are recorded in extensions.adminApplication."
+    },
+    "adminDesktop": {
+      "scope": "Admin \u2014 Desktop only; retain public website and Admin \u2014 Mobile visual guidance and native library inventory.",
+      "mode": "Operate",
+      "source": {
+        "fileId": "61fd668e-ca9f-8100-8008-dcc8d00fd746",
+        "pageId": "4898fb4f-5a75-803a-8008-de3243329ea7",
+        "entryBoardId": "4898fb4f-5a75-803a-8008-de33da7213c6",
+        "manifest": "design-previews/admin-desktop-manifest.json",
+        "exports": "design-previews/admin-desktop-*.png",
+        "contactSheet": "design-previews/admin-desktop-contact-sheet.jpg",
+        "productTruth": "PRODUCT.md",
+        "featureTruth": "ADMIN_FEATURES.md"
+      },
+      "primitiveRefs": {
+        "palette": [
+          "colors.ink",
+          "colors.gold",
+          "colors.cream",
+          "colors.muted",
+          "colors.dark",
+          "colors.surface",
+          "colors.line"
+        ],
+        "title": "typography.admin-title",
+        "body": "typography.admin-body",
+        "summary": "typography.admin-desktop-summary",
+        "controlRadius": "rounded.mobile-control",
+        "panelRadius": "rounded.mobile-panel",
+        "dialogRadius": "rounded.mobile-sheet",
+        "contentInset": "spacing.admin-desktop-inset"
+      },
+      "narrative": {
+        "overview": "The desktop owner workspace extends the Admin \u2014 Mobile identity in Operate mode. Persistent navigation, aligned tables and paired task/detail panels use the wider canvas to keep member identity, dates, balances and actions visible together. The native delivery contains 47 root boards: 32 application screens, 14 dialogs and one reference with 29 recovery examples. Existing mobile admin and public website designs remain intact.",
+        "rules": [
+          {
+            "name": "Scoped Type",
+            "body": "Retain the shared admin root title and Inter Tight data hierarchy; use the desktop summary role only in desktop numerical summaries. The public website and mobile summary ramps keep their existing scopes.",
+            "section": "typography"
+          },
+          {
+            "name": "Context Column",
+            "body": "Keep the member ID, fee period, date or audience context visible with its associated action. Wider tables and paired panels serve this relationship rather than spreading a mobile row across the canvas.",
+            "section": "layout"
+          }
+        ],
+        "dos": [
+          "Do preserve the incumbent palette, vector artwork, scoped admin type and explicit status/quantity labels.",
+          "Do retain aligned identity/ID columns, visible paging, field labels and adjacent task context.",
+          "Do keep controls large enough for the recorded minimum target and keep back/cancel actions visible."
+        ],
+        "donts": [
+          "Don't promote desktop board dimensions into responsive breakpoints or replace mobile/public typography and geometry with desktop admin values.",
+          "Don't infer live forms, validation, balances, receipts, retries or WhatsApp delivery from the prototype."
+        ],
+        "notCanonized": "Synthetic people, fees, dates, attendance values and message outcomes; one-off chart/table geometry; future business acceptance rules; the corrected literal-backslash-n copy defect. No new native registrations or shared hover/focus/motion system."
+      },
+      "layout": "32 application boards at 1440\u00d71000; sidebar 232px; top header 80px; main content x272..1400 with measured 40px horizontal inset beside the sidebar; paired panels commonly 24px apart. Fourteen dialogs are 640px wide with 32px inner inset and content-specific heights. State reference 1894\u00d71424. All wired targets at least 44\u00d744. Board dimensions are not responsive breakpoints.",
+      "elevation": "Flat tonal surfaces and row dividers, with contextual centered overlays; no new shadow vocabulary.",
+      "componentPatterns": [
+        "Persistent five-primary/three-supporting sidebar destinations and top date/Owner context",
+        "Labeled numerical summaries and aligned, paged member/payment tables",
+        "Attendance entry beside register; member details beside calendar; paired attendance charts",
+        "Two-column member fields with required marks, helper text and separate reminder permission",
+        "Fee-period entry/history, retained voided receipts and focused correction/confirmation dialogs",
+        "Three reminder audiences, personalised preview, eligibility table, distinct result counts and failed-only retry",
+        "29 static validation, empty, saving/failure, correction and Undo examples"
+      ],
+      "prototypeMotion": [
+        {
+          "name": "admin-desktop-navigation",
+          "value": "120ms ease-out dissolve",
+          "purpose": "Selected desktop screen navigation; scoped native prototype evidence."
+        },
+        {
+          "name": "admin-desktop-overlay",
+          "value": "160ms ease-out dissolve",
+          "purpose": "Desktop dialogs; not a complete application motion system."
+        }
+      ],
+      "nativeDelivery": {
+        "boards": 47,
+        "applicationScreens": 32,
+        "dialogs": 14,
+        "stateReferenceBoards": 1,
+        "stateExamples": 29,
+        "shapes": 3994,
+        "textLayers": 1784,
+        "navigationLinks": 359,
+        "rootTitlesVerified": 47,
+        "brokenDestinations": 0,
+        "undersizedInteractiveTargets": 0,
+        "rootContainmentViolations": 0,
+        "finalPngExports": 17,
+        "newLibraryColors": 0,
+        "newLibraryTokens": 0,
+        "newRegisteredComponents": 0,
+        "newLibraryTypographyStyles": 0
+      },
+      "nativeRegistration": "Existing inventory remains 38 components, 7 colors, 8 typography styles and 17 tokens. Frontmatter desktop summary/inset entries document repeated observed values; they are not newly registered Penpot assets.",
+      "interactionScope": "Historical native prototype navigation and example overlays only; its fields do not execute validation, persistence or messaging. The shipped /admin application implements forms, server validation, fee calculations, JSON receipts and simulated reminders. No real WhatsApp messages are sent.",
+      "review": {
+        "initialScope": "13 exported desktop views and the native structural manifest; no HTML/CSS detector applies to this native artifact.",
+        "finding": "One material literal-backslash-n copy-formatting defect across five desktop layers.",
+        "finalScope": "Verdict pass on all five corrected recaptures; correction resolved without visible regression.",
+        "disposition": "SHIP",
+        "limitation": "Does not claim an independent visual review of every one of the 47 boards."
+      },
+      "evidenceScope": "Historical editable native prototype only. Current application behavior and responsive styles are recorded in extensions.adminApplication."
+    },
+    "adminApplication": {
+      "scope": "Shipped /admin only; public system and historical native audit inventories above remain intact.",
+      "mode": "Operate",
+      "sources": [
+        "src/app/admin",
+        "src/components/admin/admin.module.css",
+        "src/components/admin/primitives.tsx",
+        "src/components/admin/login.tsx",
+        "src/components/admin/member-screens.tsx",
+        "src/components/admin/analytics-screen.tsx",
+        "src/components/admin/reminder-screens.tsx",
+        "src/lib/admin"
+      ],
+      "directionContract": ".impeccable/surfaces/src-app-admin.md",
+      "evidence": {
+        "directory": ".impeccable/review/admin",
+        "contactSheets": [
+          "contact-mobile-main.png",
+          "contact-mobile-flows.png",
+          "contact-desktop-main.png",
+          "contact-desktop-flows.png",
+          "contact-responsive.png"
+        ],
+        "widths": [
+          390,
+          1440,
+          1024,
+          768,
+          320
+        ],
+        "validCaptures": 46,
+        "testsPassed": 39,
+        "checks": [
+          "lint",
+          "typecheck",
+          "production build"
+        ],
+        "verdict": ".impeccable/review/admin/verdict.md",
+        "disposition": "SHIP for the eight scored fixes only"
+      },
+      "primitiveRefs": {
+        "title": "typography.admin-title",
+        "body": "typography.admin-body",
+        "mobileSummary": "typography.admin-summary",
+        "desktopSummary": "typography.admin-desktop-summary",
+        "controlRadius": "rounded.mobile-control",
+        "panelRadius": "rounded.mobile-panel",
+        "dialogRadius": "rounded.mobile-sheet",
+        "desktopInset": "spacing.admin-desktop-inset"
+      },
+      "layout": {
+        "desktopFrom": "1024px",
+        "sidebar": "232px",
+        "header": "80px",
+        "mobileInset": "20px",
+        "below360Inset": "16px",
+        "tabletContentMax": "760px at 600\u20131023px",
+        "desktopContentMax": "1600px",
+        "compactDesktopInset": "24px at 1024\u20131279px",
+        "panelGap": "24px",
+        "dialogMaxWidth": "640px",
+        "desktopDialogPadding": "32px",
+        "directoryRows": {
+          "mobile": 4,
+          "desktop": 6
+        },
+        "mobileRecipientRows": 4,
+        "rankingRows": 6,
+        "mobileFocusedFlows": "Member/payment entry and reminder flows omit header/tabs and retain back/cancel controls."
+      },
+      "componentPatterns": [
+        "Name/ID, Phone/Fee, Joined/First unpaid desktop pairs beside narrower renewal context",
+        "Desktop Members search, secondary reminders and gold Add member; filters/archive on second row; toolbar wraps at 1024\u20131279px",
+        "Overview Add attendance above upper-right contextual panel",
+        "53px/500 Teko root, login and dialog titles; Inter Tight UI/data",
+        "Masked list phones, simulation disclosure and Reply STOP preview copy",
+        "Adjacent validation, preserved form input, unsaved-change guard, conflict review, storage/connection retry and Undo",
+        "Native focus-managed dialogs and dismissible transient notifications"
+      ],
+      "focus": {
+        "fields": "2px solid var(--gold), offset 2px",
+        "invalidField": "gold border plus adjacent textual error",
+        "dialogs": "Native showModal; Escape/close/cancel and focus restoration"
+      },
+      "shadows": [
+        {
+          "name": "admin-notification",
+          "value": "0 8px 24px rgb(0 0 0 / .2)",
+          "purpose": "Transient notification only; resting panels remain flat."
+        }
+      ],
+      "backdrop": "rgb(0 0 0 / .68)",
+      "motion": [
+        {
+          "name": "admin-dialog-entry",
+          "value": "160ms ease-out",
+          "purpose": "TranslateY(16px) and opacity .7 to resting state; disabled under prefers-reduced-motion."
+        }
+      ],
+      "interactionScope": "Implemented single-owner login, server validation, JSON persistence and simulated reminder queue/retry. No remote database or real WhatsApp delivery.",
+      "assetProvenance": "No raster assets created; production screenshots are QA evidence.",
+      "notCanonized": "Fictional records, fees, dates, chart values and message outcomes; one-off chart geometry; advisory detector mismatches. No craft-floor defect promoted.",
+      "narrative": {
+        "rules": [
+          {
+            "name": "Admin Title Continuity",
+            "body": "Root pages and task dialogs keep the same Teko title role; dialog H2s override the smaller section-heading treatment. Let long titles wrap while preserving their relationship to context and actions.",
+            "section": "typography"
+          },
+          {
+            "name": "Focused Task",
+            "body": "Mobile entry and reminder review give the task its own back/cancel path; desktop keeps the workspace context. Preserve the simulation disclosure and message preview in the focused reminder sequence.",
+            "section": "layout"
+          }
+        ],
+        "dos": [
+          "Do preserve the incumbent palette and vector brand, shared admin root/dialog title role and Inter Tight data hierarchy.",
+          "Do retain the approved toolbar order, desktop field pairs, compact paging and labeled quantities across responsive layouts.",
+          "Do keep member/date/balance context, adjacent validation, visible focus, cancel/recovery controls and simulation disclosure with the affected action."
+        ],
+        "donts": [
+          "Don't substitute historical board dimensions or prototype transitions for the implemented responsive layout and reduced-motion behavior.",
+          "Don't describe local JSON persistence as a remote database or simulated reminder results as real message delivery."
+        ]
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Mobile Primary Button",
+      "kind": "button",
+      "description": "Shipped mobile gold action, with contrast-aware keyboard focus.",
+      "html": "<button class=\"ds-mobile-primary\">Explore memberships</button>",
+      "css": ".ds-mobile-primary{height:52px;border:0;border-radius:12px;padding:0 16px;background:var(--gold,#D8B66A);color:#171C19;font:600 16px \"Inter Tight\",sans-serif;cursor:pointer}.ds-mobile-primary:hover{background:var(--cream,#F2EDE3)}.ds-mobile-primary:active{transform:scale(.98)}@media(prefers-reduced-motion:reduce){.ds-mobile-primary:active{transform:none}}.ds-mobile-primary:focus-visible{outline:2px solid var(--ink,#171C19);outline-offset:4px;}",
+      "refersTo": "mobile-button-primary"
+    },
+    {
+      "name": "Mobile Plan Panel",
+      "kind": "card",
+      "description": "Whole-panel selected-plan action; opens the implemented enquiry dialog.",
+      "html": "<button class=\"ds-mobile-plan\"><strong>Basic</strong><span class=\"ds-mobile-price\">PKR 1,500 / month</span><span>Gym access \u00b7 No trainer</span></button>",
+      "css": ".ds-mobile-plan{display:flex;flex-direction:column;gap:16px;width:350px;max-width:100%;padding:16px;border:0;border-radius:16px;background:var(--surface,#222923);color:#F2EDE3;text-align:left;font:16px/1.45 \"Inter Tight\",sans-serif;cursor:pointer}.ds-mobile-price{font-family:\"Barlow Condensed\",sans-serif;font-weight:700;color:#D8B66A}.ds-mobile-plan:hover{background:color-mix(in srgb,var(--surface,#222923),var(--cream,#F2EDE3) 6%)}.ds-mobile-plan:active{opacity:.8}.ds-mobile-plan:focus-visible{outline:2px solid #D8B66A;outline-offset:4px;}",
+      "refersTo": "mobile-plan"
+    },
+    {
+      "name": "Mobile Review Panel",
+      "kind": "card",
+      "description": "Supplied rating-only content stays explicit; visual excerpt uses the numeric rating.",
+      "html": "<article class=\"ds-mobile-review\"><p class=\"ds-mobile-rating\">5/5</p><p>Rating only.</p><strong>Niaz Ahmed</strong></article>",
+      "css": ".ds-mobile-review{background:var(--surface,#222923);color:#F2EDE3;border-radius:16px;padding:16px;font:16px/1.45 \"Inter Tight\",sans-serif}.ds-mobile-rating{color:#D8B66A;font-weight:600}",
+      "refersTo": "mobile-review"
+    },
+    {
+      "name": "Mobile Bottom Tabs",
+      "kind": "nav",
+      "description": "Four hash destinations; selected Plans style shown. SVG icons remain in the shipped component.",
+      "html": "<nav class=\"ds-mobile-tabs\" aria-label=\"Main\"><a href=\"#discover\">Discover</a><a href=\"#gym\">Gym</a><a href=\"#plans\" aria-current=\"page\">Plans</a><a href=\"#reviews\">Reviews</a></nav>",
+      "css": ".ds-mobile-tabs{display:grid;grid-template-columns:repeat(4,1fr);width:390px;max-width:100%;height:96px;padding:8px 20px 24px;box-sizing:border-box;background:var(--surface,#222923)}.ds-mobile-tabs a{height:64px;min-width:44px;border:0;background:transparent;color:#BAB5AB;font:400 12px/1.2 \"Inter Tight\",sans-serif;cursor:pointer}.ds-mobile-tabs a[aria-current]{color:#D8B66A;font-weight:600}.ds-mobile-tabs a:hover{cursor:pointer}.ds-mobile-tabs a:focus-visible{outline:2px solid #D8B66A;outline-offset:4px;} .ds-mobile-tabs a{display:grid;place-items:center;text-decoration:none}",
+      "refersTo": "mobile-tabs"
+    },
+    {
+      "name": "Mobile Enquiry Sheet",
+      "kind": "custom",
+      "description": "Cream plan enquiry with real phone and prepared WhatsApp draft; runtime lives in the application.",
+      "html": "<section class=\"ds-mobile-sheet\"><h2>Basic</h2><p class=\"ds-sheet-price\">PKR 1,500 / month</p><p>Gym access without a trainer.<br>Come at a time that suits you.</p><p><strong>One-time admission fee: PKR 1,000</strong></p><hr><p><strong>WhatsApp: +92 333 1267175</strong></p><a class=\"ds-enquiry-link\" href=\"https://wa.me/923331267175?text=Hi%20New%20Gold%20Gym%202.0%21%20I%27m%20interested%20in%20the%20Basic%20membership%20at%20PKR%201%2C500%20per%20month%2C%20plus%20the%20one-time%20PKR%201%2C000%20admission%20fee.%20Could%20you%20share%20more%20details%3F\" target=\"_blank\" rel=\"noopener noreferrer\">Enquire on WhatsApp</a><button>Done</button></section>",
+      "css": ".ds-mobile-sheet{width:390px;max-width:100%;padding:24px;box-sizing:border-box;border-radius:24px 24px 0 0;background:var(--cream,#F2EDE3);color:#171C19;font:16px/1.45 \"Inter Tight\",sans-serif}.ds-mobile-sheet h2{margin:24px 0 16px}.ds-sheet-price{font-family:\"Barlow Condensed\",sans-serif;font-weight:700}.ds-mobile-sheet hr{border:0;border-top:1px solid #D8B66A}.ds-mobile-sheet button{width:100%;height:52px;margin-top:12px;border:0;border-radius:12px;background:var(--gold,#D8B66A);color:#171C19;font:600 16px \"Inter Tight\",sans-serif;cursor:pointer}.ds-mobile-sheet button:hover{cursor:pointer}.ds-mobile-sheet button:focus-visible{outline:2px solid #D8B66A;outline-offset:4px;} .ds-enquiry-link{display:flex;align-items:center;min-height:52px;padding:0 16px;border-radius:12px;background:var(--gold,#D8B66A);color:var(--ink,#171C19);font-weight:600;text-decoration:none}.ds-enquiry-link:hover{background:var(--ink,#171C19);color:var(--cream,#F2EDE3)}.ds-enquiry-link:focus-visible{outline:2px solid var(--ink,#171C19);outline-offset:4px}",
+      "refersTo": "mobile-enquiry-sheet"
+    },
+    {
+      "name": "Desktop Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Desktop compact gold action with cream hover and visible keyboard focus.",
+      "html": "<button class=\"ds-button-primary\">Enquire about this plan</button>",
+      "css": ".ds-button-primary{font-family:\"Inter Tight\",sans-serif;font-size:16px;font-weight:600;height:56px;border-radius:4px;padding:0 16px;background:var(--gold,#D8B66A);color:#171C19;border:none;} .ds-button-primary:hover{background:var(--cream,#F2EDE3);color:#171C19;} .ds-button-primary:focus-visible{outline:2px solid #F2EDE3;outline-offset:4px;}"
+    },
+    {
+      "name": "Desktop Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Desktop outlined action with cream hover and visible keyboard focus.",
+      "html": "<button class=\"ds-button-secondary\">View memberships</button>",
+      "css": ".ds-button-secondary{font-family:\"Inter Tight\",sans-serif;font-size:16px;font-weight:600;height:56px;border-radius:4px;padding:0 16px;background:var(--ink,#171C19);color:#F2EDE3;border:1px solid #F2EDE3;} .ds-button-secondary:focus-visible{outline:2px solid #F2EDE3;outline-offset:4px;} .ds-button-secondary:hover{cursor:pointer;}"
+    },
+    {
+      "name": "Admin Primary Action",
+      "kind": "button",
+      "description": "Scoped admin gold action; compact desktop treatment begins at 1024px.",
+      "html": "<button class=\"ds-admin-primary\">Add member</button>",
+      "css": ".ds-admin-primary{font:600 14px \"Inter Tight\",sans-serif;min-height:50px;padding:13px 16px;border:0;border-radius:12px;cursor:pointer;background:var(--gold,#D8B66A);color:var(--ink,#171C19)}.ds-admin-primary:hover:not(:disabled){filter:brightness(1.08)}.ds-admin-primary:focus-visible{outline:2px solid var(--gold,#D8B66A);outline-offset:4px}.ds-admin-primary:disabled{opacity:.55;cursor:default}@media(min-width:1024px){.ds-admin-primary{min-height:44px;padding:12px 16px}}"
+    },
+    {
+      "name": "Admin Secondary Action",
+      "kind": "button",
+      "description": "Scoped surface-backed return or secondary task action.",
+      "html": "<button class=\"ds-admin-secondary\">Cancel</button>",
+      "css": ".ds-admin-secondary{font:600 14px \"Inter Tight\",sans-serif;min-height:50px;padding:13px 16px;border:0;border-radius:12px;cursor:pointer;min-height:44px;padding:12px 16px;background:var(--surface,#222923);color:var(--cream,#F2EDE3)}.ds-admin-secondary:hover:not(:disabled){filter:brightness(1.08)}.ds-admin-secondary:focus-visible{outline:2px solid var(--gold,#D8B66A);outline-offset:4px}.ds-admin-secondary:disabled{opacity:.55;cursor:default}"
+    },
+    {
+      "name": "Admin Labeled Field",
+      "kind": "input",
+      "description": "Persistent label, scoped field geometry and adjacent accessible validation.",
+      "html": "<div class=\"ds-admin-field\"><label for=\"ds-admin-member\">Member ID *</label><input id=\"ds-admin-member\" aria-invalid=\"true\" aria-describedby=\"ds-admin-error\" value=\"0142\"><p id=\"ds-admin-error\" role=\"alert\">This member ID is already in use.</p></div>",
+      "css": ".ds-admin-field{display:flex;flex-direction:column;gap:8px;font:14px \"Inter Tight\",sans-serif}.ds-admin-field label{color:var(--muted,#BAB5AB)}.ds-admin-field input{min-height:48px;padding:12px 14px;border:1px solid transparent;border-radius:12px;background:var(--surface,#222923);color:var(--cream,#F2EDE3);font:inherit;caret-color:var(--gold,#D8B66A)}.ds-admin-field input[aria-invalid=true]{border-color:var(--gold,#D8B66A)}.ds-admin-field input:focus{outline:2px solid var(--gold,#D8B66A);outline-offset:2px}.ds-admin-field p{margin:0;color:var(--gold,#D8B66A);font-size:12px;line-height:1.55}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Train with purpose.",
+    "overview": "The finished identity pairs forceful condensed headlines with calm, readable supporting copy. Charcoal fields frame the supplied artwork and real interior photographs; gold marks actions, prices, ratings, and the selected destination. The mobile expression is compact, with softly rounded panels and persistent navigation.\n\nThis records the shipped public website in `src/components/public-website.tsx`, its CSS module and `src/app/globals.css`, checked against the native Penpot references and finished captures in `.impeccable/review/public/`. Mobile and desktop main headings use Teko; prices use Barlow Condensed; supporting text uses Inter Tight. All fonts and optimized WebP image derivatives are served locally. Native artifact identifiers and design history remain in [PRODUCT.md](PRODUCT.md).",
+    "keyCharacteristics": [
+      "Compact condensed titles with plain sentence-case supporting text.",
+      "Flat charcoal surfaces, restrained gold, and readable cream text.",
+      "Real gym imagery, comparable plan panels, and persistent mobile tabs."
+    ],
+    "rules": [
+      {
+        "name": "Readable Gold",
+        "body": "Use gold with ink and cream text on dark. Use ink for body text on cream; gold on cream is reserved for non-text details.",
+        "section": "colors"
+      },
+      {
+        "name": "Scoped Condensed Type",
+        "body": "Use Teko for mobile and desktop main headings, Barlow Condensed for membership prices, and Inter Tight for body explanations and control labels.",
+        "section": "typography"
+      },
+      {
+        "name": "Whole Artwork",
+        "body": "Preserve the supplied hero image at its full 2:1 ratio and place interface copy outside it. Gallery previews may crop; photo viewers preserve each complete image.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do preserve the supplied vector logo and the full hero artwork.",
+      "Do use ink body text on cream and readable cream text on dark.",
+      "Do keep touch targets at least 44px in both dimensions and preserve visible keyboard focus.",
+      "Do use the scoped mobile and desktop type, inset and shape roles.",
+      "Do preserve comparable membership panels, supplied reviews, and complete-aspect photo viewers.",
+      "Do retain reduced-motion alternatives and dismissible, focus-managed dialogs."
+    ],
+    "donts": [
+      "Don't use gold as body text on cream.",
+      "Don't replace the supplied gym photographs with invented gym imagery.",
+      "Don't turn the inactive-star color into a general muted-text color."
+    ],
+    "notCanonized": "One-off image corners, local text sizes and local desktop feature separator color; unconfirmed address/hours are content, not tokens. No craft-floor defect promoted."
+  }
+}
