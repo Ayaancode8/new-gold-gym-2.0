@@ -1,14 +1,12 @@
 import { defineConfig } from "@playwright/test";
-import { existsSync, mkdtempSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { existsSync } from "node:fs";
 
 const systemChrome = "/opt/google/chrome/chrome";
 const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ?? (existsSync(systemChrome) ? systemChrome : undefined);
-const adminDataPath = join(mkdtempSync(join(tmpdir(), "gold-gym-e2e-")), "admin.json");
 
 export default defineConfig({
   testDir: "./tests",
+  testIgnore: ["**/domain.spec.ts", "**/browser-store.spec.ts"],
   fullyParallel: true,
   workers: 3,
   retries: 0,
@@ -20,5 +18,5 @@ export default defineConfig({
     screenshot: "only-on-failure",
     launchOptions: { executablePath, args: ["--no-sandbox", "--disable-dev-shm-usage"] },
   },
-  webServer: { command: "node scripts/admin-test-server.mjs", url: "http://127.0.0.1:3010", reuseExistingServer: false, timeout: 60000, env: { ADMIN_DATA_PATH: adminDataPath } },
+  webServer: { command: "npm start", url: "http://127.0.0.1:3010", reuseExistingServer: false, timeout: 60000, env: { PORT: "3010" } },
 });

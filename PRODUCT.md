@@ -1,6 +1,6 @@
 # New Gold Gym 2.0
 
-This project contains the public New Gold Gym 2.0 website and the owner admin portal implemented from the approved Penpot designs. Prospective members can see the gym, compare memberships, read supplied reviews and prepare a WhatsApp enquiry. The public visitor mode is Persuade; the admin mode is Operate. The admin portal at `/admin` has single-owner login and temporary server-side JSON persistence. WhatsApp reminders are explicitly simulated. No remote database or deployment is configured.
+This project contains the public New Gold Gym 2.0 website and the owner admin portal implemented from the approved Penpot designs. Prospective members can see the gym, compare memberships, read supplied reviews and prepare a WhatsApp enquiry. The public visitor mode is Persuade; the admin mode is Operate. The admin portal at `/admin/` is a public browser demo with fictional records saved in localStorage and a confirmed reset control. WhatsApp reminders are explicitly simulated. The application exports to static files for Cloudflare Pages; no remote database is required.
 
 ## Confirmed content
 
@@ -62,12 +62,12 @@ The overview entry board is `4898fb4f-5a75-803a-8008-de183aee58ef`. Native IDs a
 
 The desktop entry board is `4898fb4f-5a75-803a-8008-de33da7213c6`. The [desktop manifest](design-previews/admin-desktop-manifest.json) records native board IDs, 359 prototype links, structural checks and 17 final previews; [desktop handoff rules](design-previews/admin-desktop-rules.md) retain the existing billing, attendance and reminder acceptance rules. The 31 mobile admin boards, public pages and native library inventory remain unchanged. This is an editable design with selected prototype paths; no live database, forms, fee calculations or message delivery is implemented.
 
-## Implemented owner portal
+## Current browser demo implementation
 
-The website now serves `/admin` alongside the public website. Owner login uses a salted scrypt password hash, an eight-hour signed HttpOnly cookie and server-side authorization on every data endpoint. Local setup and generated access details are documented in README.md.
+The complete site now uses Next.js static export. `/admin/` opens the demo directly and `/admin/login/` introduces it without requesting credentials. Hash navigation preserves new record routes, filters, direct links, refresh and browser history on static hosting.
 
-Members, attendance, fee periods, receipt/void history and simulated reminder batches persist in `.data/admin.json` (or `ADMIN_DATA_PATH`). The register starts with fictional sample records; all quantities are derived from records. Locking, atomic replacement, a last-good backup, revisions and submission identifiers protect changes. Corrupt data is reported and preserved. This targets one Node.js server with writable persistent local storage.
+The register starts with 126 fictional members, anchored to the current date in Asia/Karachi. Members, attendance, fee periods, receipt/void history and simulated reminders persist in this browser's localStorage. Each browser and origin has separate data. Demo → Reset demo data opens a confirmation before replacing that register with fresh sample records. Existing local server records and credentials are never imported or exported.
 
-The mobile-first application implements the ADMIN_FEATURES.md workflows, including add/edit, archive/restore, monthly fee schedules and partial payments, receipt correction, dated attendance/correction/removal/Undo, inactivity thresholds, calendars, analytics, and reminder audience/review/results/retry. Dates use Asia/Karachi. Posted fee periods and receipts remain intact when future schedules change. The wider desktop layout begins at 1024px.
+The established billing, attendance, correction, archive/restore, analytics and reminder rules remain active. Web Locks serialize supported-browser tab writes; revision checks reject stale submissions and submission IDs prevent duplicate saves. Storage failures keep the form available, and corrupt browser data has an explicit reset path. Reminders are simulated and no WhatsApp messages are sent.
 
-The approved Penpot examples above remain historical design evidence. Their native fields do not themselves execute application behavior; the running Next.js portal does. Reminder messages include a personal balance, due date, member ID and opt-out instruction; all sends remain simulated, with no WhatsApp credentials or actual delivery. A Cloudflare Tunnel can expose the running Node server temporarily; direct Workers hosting would require replacing filesystem persistence.
+The mobile-first design and desktop layout from 1024px are retained. A persistent demo notice explains the fictional records, browser-only saving and reset entry point. Cloudflare build settings and local preview commands are in DEPLOYMENT.md and README.md. Historical Penpot prototypes and their example values above remain design evidence.

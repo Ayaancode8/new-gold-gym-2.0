@@ -1,4 +1,4 @@
-import { randomUUID } from "node:crypto";
+const randomUUID = () => globalThis.crypto.randomUUID();
 import { addDays, inMonth, isMembershipDate, renewalMatches, scheduleOn, shiftMonth, validDate } from "./calendar";
 import { balance, recipientReason, reminderAudience, reminderMessage } from "./selectors";
 import type { AdminCommand, AdminData, Member, MemberInput } from "./types";

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "./navigation";
 import { useEffect, useRef, type ReactNode } from "react";
 import styles from "./admin.module.css";
 

@@ -1,6 +1,6 @@
 # New Gold Gym 2.0
 
-The public website and owner admin portal implemented from the Penpot Mobile and Desktop prototypes.
+A demo gym website and interactive admin portal, built from the approved Penpot mobile and desktop designs. The complete site exports to static files for free Cloudflare Pages hosting.
 
 ## Run locally
 
@@ -11,12 +11,29 @@ npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). For the production build:
+Open [localhost:3000](http://localhost:3000). To preview the exported website:
 
 ```sh
 npm run build
 npm start
 ```
+
+`npm start` serves only the generated `out/` files. No Next.js application server, database, owner password or API is required.
+
+## Admin demo
+
+Open `/admin/` directly, or `/admin/login/` for the demo introduction. There is no password or authentication gate.
+
+- Each browser starts with 126 fictional members and synthetic attendance and receipts, anchored to the current date in Asia/Karachi.
+- Members, attendance, fee periods, payment corrections, analytics and simulated reminders use the existing business rules. Figures are calculated from records.
+- Changes are saved in this site's `localStorage`, survive refresh, and stay within the current browser profile. Other browsers, devices, and site origins have separate demo registers. Clearing site data removes the saved demo.
+- Choose **Demo → Reset demo data**, then confirm **Reset demo**, to replace the browser's register with fresh sample data. Cancellation keeps existing records. No other site storage is cleared.
+- Browser storage must be enabled. Full, unavailable or damaged storage produces a readable recovery message. Failed saves preserve form input. Damaged demo data can be replaced through the reset control.
+- Admin navigation uses URLs such as `/admin/#/members` so new member IDs, payment details, filters, refresh and browser history work on static hosting.
+- Web Locks serialize writes between tabs where supported. Revision checks reject stale edits; submission IDs prevent repeated saves. Browsers without Web Locks have a synchronous local-storage fallback, which does not guarantee simultaneous multi-tab writes.
+- This is a public demo with fictional records, not a private register for real gym/customer information.
+
+All admin reminders are simulated. No WhatsApp API, account or messaging credential is configured, and no reminder messages are sent.
 
 ## Checks
 
@@ -24,62 +41,24 @@ npm start
 npm run lint
 npm run typecheck
 npm run build
+npm run test:unit
 npm run test:e2e
 ```
 
-Playwright uses system Chrome when available at `/opt/google/chrome/chrome`. Otherwise run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`. Build before running browser tests. The suite starts an isolated production server on port 3010 with a temporary register and test-only credentials. Public WhatsApp navigation is intercepted; admin reminders are simulated. No messages are sent.
+Build before the browser suite. Tests serve `out/` on port 3010, exercising the same static files used by Cloudflare. Each browser context gets its own demo storage. Playwright uses system Chrome at `/opt/google/chrome/chrome` when available; otherwise run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`.
 
-Run just the admin checks with `npm run test:admin`, or the storage/business-rule tests without a server with `npx playwright test --config=playwright.unit.config.ts`.
+Next.js uses the TypeScript compiler API during builds (`experimental.useTypeScriptCli: false`), retaining type checks while avoiding the project's CLI configuration-output failure.
 
-## Owner admin
+## Cloudflare Pages
 
-Configure local access once before starting the server:
+See [DEPLOYMENT.md](DEPLOYMENT.md). Use build command **`npm run build`**, output directory **`out`**, and the repository's **`main`** branch. No database, Worker, API tokens or admin secrets are needed by the application.
 
-```sh
-npm run admin:setup
-npm run dev
-```
+## Public content
 
-Open `/admin`. The generated username and password are in `.data/owner-access.txt`. Setup preserves an existing `.env.local`; repeated setup preserves the owner configuration. Restart an already-running server after configuration changes. The application reads a salted scrypt password hash and a session signing secret from environment configuration; it never sends these to the browser. Sessions last eight hours. Changing the password hash or signing secret invalidates existing sessions. Five failed logins pause further attempts for 15 minutes in the current server process.
+Shared memberships, reviews, photos and contact details live in `src/data/gym.ts`. Enquiries prepare a WhatsApp draft for **+92 333 1267175**; sending remains the visitor's action inside WhatsApp. Address and opening hours retain the approved placeholder copy.
 
-The portal includes Overview, Attendance, Members, Payments and Analytics, plus member profiles, add/edit, archive/restore, inactive lists, attendance correction/removal/Undo, fee-period receipts and voids, and reminder audience/review/results/retry. The layout is mobile-first, with a desktop sidebar and paired panels from 1024px.
+The original `assets/` and `logo/` files remain intact. Local WebP images and bundled fonts keep the exported site self-contained. The public website retains Discover, Gym, Plans and Reviews on mobile and its desktop homepage from 1024px.
 
-### Temporary register
-
-- The first authenticated visit creates `.data/admin.json` with 126 fictional members and synthetic attendance/receipts, anchored to the creation date in Asia/Karachi. On October 30, 2026, its initial summaries are 43 present, 83 not marked, 91 paid and 35 pending, including 12 overdue.
-- Values are calculated from records. Refreshing or restarting the server retains changes. `ADMIN_DATA_PATH` can point to another writable JSON file. All server routes use the Node.js runtime and one local filesystem; use one server instance with persistent storage.
-- Writes use a filesystem lock and atomic replacement. `.data/admin.json.backup` holds the last valid version before a change. Revision checks protect concurrent edits, and submission IDs prevent replayed receipts or duplicated member creation.
-- To restore, stop the server, keep a copy of the damaged file, copy the `.backup` file over the primary file, and restart. Damaged or unsupported data is reported rather than replaced. To start a fresh sample register, stop the server and move **both** the primary JSON and its backup aside before restarting. These files contain the register; keep your copies private.
-- Fees are stored in integer paisa. Joining days anchor renewals; short months clamp without changing the original day. Each charge retains its amount and period. Receipts establish payment, voids retain history, and attendance has no effect on fee status. Archive pauses future fees and reminders while retaining historical debt.
-- Dates and times follow Asia/Karachi. Future fee changes are previewed and leave posted periods and receipts intact. Restoration requires reviewing the next fee date.
-
-### Reminder simulation
-
-All reminder actions are explicitly simulated. The portal reviews 3-day, 7-day and overdue audiences, permission/phone exclusions, personalised messages, results and failed-only retries. Queued eligibility is rechecked one recipient at a time; payment while queued causes a skip. Overlapping audiences cannot repeat the same member/fee reminder that day. Queue progress is saved, and reopening a results page resumes processing. Pause is available while the page is open.
-
-For a reproducible failure example, numeric member IDs divisible by 17 fail on their first simulation attempt and succeed on retry. A simulated “Sent” result does not mean delivered. No WhatsApp API connection, credential or template is configured.
-
-### Temporary Cloudflare preview
-
-With the production app running on port 3030, `cloudflared tunnel --url http://localhost:3030` creates a temporary HTTPS address. Open `/admin` on that address and use the same owner credentials. The computer, server and tunnel must remain running; JSON data stays on this computer. HTTPS proxy headers are supported. If `SITE_URL` is configured, set it to the public tunnel origin and restart the server before logging in.
-
-Direct Cloudflare Workers hosting requires replacing the local JSON store with persistent cloud storage; its temporary filesystem cannot retain this register between requests.
-
-### Internal API
-
-- `POST /api/admin/login` and `/api/admin/logout` establish/clear the HttpOnly owner cookie.
-- `GET /api/admin/state` returns the current records, revision and local date, with private/no-store caching.
-- `POST /api/admin/actions` accepts `{ revision, submissionId, command }`. Typed commands cover member, attendance, receipt and reminder changes; runtime validation is enforced on the server. Errors include a readable `error` and, where relevant, a `field`. Conflicts return 409 and prompt review of the latest records without losing form input.
-
-Every data endpoint requires the owner session; POST endpoints also validate the request origin. There are no public registration, password-reset, remote database or messaging endpoints.
-
-## Content and behavior
-
-- Shared memberships, reviews, photos and contact details live in `src/data/gym.ts`.
-- Enquiries use **+92 333 1267175** and prepare a WhatsApp draft containing the selected membership and admission fee. Sending remains the visitor's action inside WhatsApp.
-- Address and opening hours retain the approved placeholder copy.
-- Below 1024px, the site uses Discover, Gym, Plans and Reviews destinations with persistent bottom navigation. Larger screens use the approved desktop homepage. Public hashes preserve destination selection across navigation and resizing.
-- The original files in `assets/` and `logo/` remain intact. WebP derivatives and native Penpot navigation SVG exports are served locally. Teko, Barlow Condensed and Inter Tight are bundled and self-hosted with `next/font/local`.
-- The public website needs no external backend service or account. Admin requires the local owner configuration above. Before publishing, set `SITE_URL` to the real origin; admin POST origins must match it when configured. There is no deployment configured.
+Set optional `SITE_URL` to the final HTTPS origin before building for absolute social image URLs. `.env.local`, `.data/`, local credentials and generated files remain excluded from Git. Existing local server records are never imported into the browser demo.
 
 The source design and historical exports are documented in `PRODUCT.md`, `DESIGN.md` and `design-previews/`.

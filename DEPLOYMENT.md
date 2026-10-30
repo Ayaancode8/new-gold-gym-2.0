@@ -1,28 +1,35 @@
-# Cloudflare hosting
+# Cloudflare Pages deployment
 
-This repository contains both the public gym website and a Node.js owner admin portal.
+The public website and admin demo are a static Next.js export. Admin records live in each visitor's browser; the site needs no database or application server.
 
-## Current compatibility
+Connect this GitHub repository to a Cloudflare **Pages** project with Git integration:
 
-The complete application is **not ready to deploy directly to Cloudflare Pages or Workers**. The admin portal writes its register, locks, and backups to a local filesystem. Cloudflare Workers does not provide persistent writable disk for this register. Uploading the repository to GitHub does not deploy the website.
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Framework preset | None (enter the build settings below) |
+| Root directory | Repository root |
+| Build command | `npm run build` |
+| Build output directory | `out` |
 
-Choose the deployment scope before connecting this repository to Cloudflare:
+Use a Node.js version supported by the project (20.9 or newer). Optionally set `SITE_URL` to the final `https://…pages.dev` or custom-domain origin, then rebuild. No deploy command or Worker bindings are needed for Pages.
 
-- **Public website only:** create a separate static export build that excludes admin pages and API routes and handles local images without Next.js's server image optimizer. Deploy the resulting `out` directory to Cloudflare Pages. The repository currently has no static export build; selecting the Next.js static preset alone will not work.
-- **Public website and admin:** migrate the register to persistent cloud storage, adapt the application for Cloudflare's supported runtime, and verify sessions, password hashing, concurrency, and backups there before deploying.
+After deployment, open `/` and `/admin/`. The introduction is at `/admin/login/`. Admin links use hash navigation, including newly created records, so refreshing a detail page works without server rewrites.
 
-The existing `npm run build` command builds the complete Node.js application. It is not a Cloudflare Pages static build command.
+## Demo data
 
-## Configuration and private data
+There is no admin password. Each browser has its own fictional register in `localStorage`; edits survive refresh and are not shared across devices or origins. Use **Demo → Reset demo data** to start again. A preview domain and a custom domain have separate browser storage. Browser storage must be enabled. Reminders remain simulations.
 
-- `.env.local`, `.data/`, owner credentials, member records, and backups must remain outside Git.
-- `.env.example` documents the configuration names without containing real credentials.
-- Set `SITE_URL` to the production HTTPS origin before building/deploying. It is used for social metadata and admin origin checks.
-- Configure production secrets in the hosting platform rather than committing them.
-- Do not use the local owner setup script as a public hosting build step.
+Do not configure `ADMIN_DATA_PATH`, owner credentials, or server session secrets. Existing local `.data/` files and `.env.local` are excluded from Git and from the exported site. The static application has no `/api/admin` endpoints.
 
-## References
+## Preview before deployment
 
-- [Cloudflare Pages: static Next.js sites](https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/)
-- [Cloudflare Workers: filesystem behavior](https://developers.cloudflare.com/workers/runtime-apis/nodejs/fs/)
-- [Cloudflare: Next.js hosting options](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/)
+```sh
+npm ci
+npm run build
+npm start
+```
+
+`npm start` serves the actual `out/` directory. Cloudflare serves those same files directly. The public website uses local WebP assets with image optimization disabled because there is no image-processing server.
+
+[Cloudflare's static Next.js deployment guide](https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/)

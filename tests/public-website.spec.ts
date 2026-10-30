@@ -204,7 +204,7 @@ test("metadata, local assets and complete hero artwork are present", async ({ pa
   const bounds = (await hero.boundingBox())!;
   expect(bounds.width / bounds.height).toBeCloseTo(2, 1);
   expect(external).toEqual([]);
-  const admin = await page.request.get("/admin", { maxRedirects: 0 });
-  expect(admin.status()).toBe(307);
-  expect(admin.headers().location).toMatch(/admin\/login/);
+  const admin = await page.request.get("/admin/");
+  expect(admin.status()).toBe(200);
+  expect(await admin.text()).toContain("Admin demo");
 });

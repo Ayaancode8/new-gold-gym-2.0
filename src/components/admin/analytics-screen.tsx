@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Link from "./navigation";
 import { addDays, daysBetween, formatDate, inMonth, shiftMonth } from "@/lib/admin/calendar";
 import { visits } from "@/lib/admin/selectors";
 import { useAdmin } from "./context";

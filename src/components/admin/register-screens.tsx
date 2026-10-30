@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "./navigation";
 import { useState, type FormEvent } from "react";
 import { addDays, formatDate, formatTime, localTime } from "@/lib/admin/calendar";
 import { overview, visits } from "@/lib/admin/selectors";

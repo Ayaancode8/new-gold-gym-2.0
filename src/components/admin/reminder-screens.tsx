@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import Link from "./navigation";
+import { useRouter } from "./navigation";
 import { useEffect, useRef, useState } from "react";
 import { addDays, formatDate, money } from "@/lib/admin/calendar";
 import { balance, reminderAudience } from "@/lib/admin/selectors";
