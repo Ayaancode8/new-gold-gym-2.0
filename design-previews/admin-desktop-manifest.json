@@ -1,0 +1,853 @@
+{
+  "file": {
+    "id": "61fd668e-ca9f-8100-8008-dcc8d00fd746",
+    "name": "New File 12"
+  },
+  "page": {
+    "id": "4898fb4f-5a75-803a-8008-de3243329ea7",
+    "name": "Admin \u2014 Desktop"
+  },
+  "roots": [
+    {
+      "id": "4898fb4f-5a75-803a-8008-de33da7213c6",
+      "name": "flows / admin-desktop-overview-start",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "title": "Overview"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de352d94a5c6",
+      "name": "screens / admin-desktop-results-overdue",
+      "x": 0,
+      "y": 5800,
+      "width": 1440,
+      "height": 1000,
+      "title": "Reminder results"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de352a0009db",
+      "name": "screens / admin-desktop-recipients-overdue",
+      "x": 6400,
+      "y": 4640,
+      "width": 1440,
+      "height": 1000,
+      "title": "Review recipients"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3527524c57",
+      "name": "screens / admin-desktop-reminders-overdue",
+      "x": 4800,
+      "y": 4640,
+      "width": 1440,
+      "height": 1000,
+      "title": "WhatsApp fee reminders"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de35239f2482",
+      "name": "screens / admin-desktop-results-7",
+      "x": 3200,
+      "y": 4640,
+      "width": 1440,
+      "height": 1000,
+      "title": "Reminder results"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de352142977c",
+      "name": "screens / admin-desktop-recipients-7",
+      "x": 1600,
+      "y": 4640,
+      "width": 1440,
+      "height": 1000,
+      "title": "Review recipients"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de351eca1a7b",
+      "name": "screens / admin-desktop-reminders-7",
+      "x": 0,
+      "y": 4640,
+      "width": 1440,
+      "height": 1000,
+      "title": "WhatsApp fee reminders"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de351c5ecd95",
+      "name": "screens / admin-desktop-results-3",
+      "x": 6400,
+      "y": 3480,
+      "width": 1440,
+      "height": 1000,
+      "title": "Reminder results"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de35198f39dc",
+      "name": "screens / admin-desktop-recipients-3",
+      "x": 4800,
+      "y": 3480,
+      "width": 1440,
+      "height": 1000,
+      "title": "Review recipients"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3516f9fb87",
+      "name": "screens / admin-desktop-reminders-3",
+      "x": 3200,
+      "y": 3480,
+      "width": 1440,
+      "height": 1000,
+      "title": "WhatsApp fee reminders"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de35145c0b29",
+      "name": "screens / admin-desktop-details-ali",
+      "x": 1600,
+      "y": 3480,
+      "width": 1440,
+      "height": 1000,
+      "title": "Payment details"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de350ad687d0",
+      "name": "screens / admin-desktop-record-bilal",
+      "x": 0,
+      "y": 3480,
+      "width": 1440,
+      "height": 1000,
+      "title": "Record payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3507b0cf4d",
+      "name": "screens / admin-desktop-record-ahmed",
+      "x": 6400,
+      "y": 2320,
+      "width": 1440,
+      "height": 1000,
+      "title": "Record payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38e6db6e38",
+      "name": "screens / admin-desktop-record-ali",
+      "x": 6400,
+      "y": 11300,
+      "width": 1440,
+      "height": 1000,
+      "title": "Record payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de350526ad57",
+      "name": "screens / admin-desktop-payments-corrected",
+      "x": 4800,
+      "y": 2320,
+      "width": 1440,
+      "height": 1000,
+      "title": "Payments"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38ea188587",
+      "name": "screens / admin-desktop-payments-corrected-ali",
+      "x": 3200,
+      "y": 11300,
+      "width": 1440,
+      "height": 1000,
+      "title": "Payments"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3502038e3f",
+      "name": "screens / admin-desktop-payment-unpaid",
+      "x": 3200,
+      "y": 2320,
+      "width": 1440,
+      "height": 1000,
+      "title": "Corrected payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38e226c03e",
+      "name": "screens / admin-desktop-payment-unpaid-ali",
+      "x": 4800,
+      "y": 11300,
+      "width": 1440,
+      "height": 1000,
+      "title": "Corrected payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34ff7f9d65",
+      "name": "screens / admin-desktop-payment-details",
+      "x": 1600,
+      "y": 2320,
+      "width": 1440,
+      "height": 1000,
+      "title": "Payment details"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34fd014c4d",
+      "name": "screens / admin-desktop-payment-record",
+      "x": 0,
+      "y": 2320,
+      "width": 1440,
+      "height": 1000,
+      "title": "Record payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34fa923f2d",
+      "name": "screens / admin-desktop-member-edit",
+      "x": 6400,
+      "y": 1160,
+      "width": 1440,
+      "height": 1000,
+      "title": "Edit member"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34f811c7ab",
+      "name": "screens / admin-desktop-member-add",
+      "x": 4800,
+      "y": 1160,
+      "width": 1440,
+      "height": 1000,
+      "title": "Add member"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34f57e048c",
+      "name": "screens / admin-desktop-archived",
+      "x": 3200,
+      "y": 1160,
+      "width": 1440,
+      "height": 1000,
+      "title": "Archived members"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38ee428acc",
+      "name": "screens / admin-desktop-archived-ahmed",
+      "x": 0,
+      "y": 11300,
+      "width": 1440,
+      "height": 1000,
+      "title": "Archived members"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34f2397d0e",
+      "name": "screens / admin-desktop-inactive",
+      "x": 1600,
+      "y": 1160,
+      "width": 1440,
+      "height": 1000,
+      "title": "Inactive members"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34ef6b2690",
+      "name": "screens / admin-desktop-profile",
+      "x": 0,
+      "y": 1160,
+      "width": 1440,
+      "height": 1000,
+      "title": "Ahmed Khan"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34ec9cd1e5",
+      "name": "screens / admin-desktop-analytics",
+      "x": 6400,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "title": "Attendance analytics"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34ea004cd0",
+      "name": "screens / admin-desktop-payments",
+      "x": 4800,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "title": "Payments"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34e7269cdc",
+      "name": "screens / admin-desktop-members",
+      "x": 3200,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "title": "Members"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de34e3f86534",
+      "name": "screens / admin-desktop-attendance",
+      "x": 1600,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "title": "Attendance"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38cacfc2c7",
+      "name": "screens / admin-desktop-attendance-marked",
+      "x": 0,
+      "y": 6960,
+      "width": 1440,
+      "height": 1000,
+      "title": "Attendance"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de387b975425",
+      "name": "screens / admin-desktop-attendance-removed",
+      "x": 1600,
+      "y": 6960,
+      "width": 1440,
+      "height": 1000,
+      "title": "Attendance"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3849b9286a",
+      "name": "overlay / admin-desktop-correct-payment",
+      "x": 0,
+      "y": 9000,
+      "width": 640,
+      "height": 576,
+      "title": "Correct payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38de719194",
+      "name": "overlay / admin-desktop-correct-payment-ali",
+      "x": 4000,
+      "y": 9000,
+      "width": 640,
+      "height": 576,
+      "title": "Correct payment"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de384e0acafd",
+      "name": "overlay / admin-desktop-correct-attendance",
+      "x": 720,
+      "y": 9000,
+      "width": 640,
+      "height": 576,
+      "title": "Correct check-in"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3855bf8470",
+      "name": "overlay / admin-desktop-remove-attendance",
+      "x": 1440,
+      "y": 9000,
+      "width": 640,
+      "height": 416,
+      "title": "Remove check-in?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3856d32760",
+      "name": "overlay / admin-desktop-archive-member",
+      "x": 2160,
+      "y": 9000,
+      "width": 640,
+      "height": 472,
+      "title": "Archive member?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de385aba8b9b",
+      "name": "overlay / admin-desktop-restore-member",
+      "x": 2880,
+      "y": 9000,
+      "width": 640,
+      "height": 548,
+      "title": "Restore member"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38f1a2a7d0",
+      "name": "overlay / admin-desktop-restore-ahmed",
+      "x": 6160,
+      "y": 9000,
+      "width": 640,
+      "height": 548,
+      "title": "Restore member"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de385ed409aa",
+      "name": "overlay / admin-desktop-unsaved-changes",
+      "x": 0,
+      "y": 9740,
+      "width": 640,
+      "height": 376,
+      "title": "Discard changes?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3862a9ff15",
+      "name": "overlay / admin-desktop-confirm-send-3",
+      "x": 720,
+      "y": 9740,
+      "width": 640,
+      "height": 472,
+      "title": "Send fee reminders?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de3866d11b0d",
+      "name": "overlay / admin-desktop-confirm-send-7",
+      "x": 1440,
+      "y": 9740,
+      "width": 640,
+      "height": 472,
+      "title": "Send fee reminders?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de386aad5f33",
+      "name": "overlay / admin-desktop-confirm-send-overdue",
+      "x": 2160,
+      "y": 9740,
+      "width": 640,
+      "height": 472,
+      "title": "Send fee reminders?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38779da8d0",
+      "name": "overlay / admin-desktop-retry-failed",
+      "x": 2880,
+      "y": 9740,
+      "width": 640,
+      "height": 424,
+      "title": "Retry failed messages?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38dab26120",
+      "name": "overlay / admin-desktop-retry-failed-overdue",
+      "x": 5440,
+      "y": 9000,
+      "width": 640,
+      "height": 424,
+      "title": "Retry failed messages?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de38d79d76ec",
+      "name": "overlay / admin-desktop-retry-failed-7",
+      "x": 4720,
+      "y": 9000,
+      "width": 640,
+      "height": 424,
+      "title": "Retry failed messages?"
+    },
+    {
+      "id": "4898fb4f-5a75-803a-8008-de387ff4e1f7",
+      "name": "reference / admin-desktop-states-and-recovery",
+      "x": 3200,
+      "y": 6960,
+      "width": 1894,
+      "height": 1424,
+      "title": "Validation and recovery"
+    }
+  ],
+  "counts": {
+    "boards": 47,
+    "shapes": 3994,
+    "text": 1784,
+    "links": 359
+  },
+  "broken": [],
+  "smallTargets": [],
+  "overflow": [],
+  "headings": [
+    {
+      "root": "flows / admin-desktop-overview-start",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-results-overdue",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-recipients-overdue",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-reminders-overdue",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-results-7",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-recipients-7",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-reminders-7",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-results-3",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-recipients-3",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-reminders-3",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-details-ali",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-record-bilal",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-record-ahmed",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-record-ali",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payments-corrected",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payments-corrected-ali",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payment-unpaid",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payment-unpaid-ali",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payment-details",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payment-record",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-member-edit",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-member-add",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-archived",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-archived-ahmed",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-inactive",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-profile",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-analytics",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-payments",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-members",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-attendance",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-attendance-marked",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "screens / admin-desktop-attendance-removed",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-correct-payment",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-correct-payment-ali",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-correct-attendance",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-remove-attendance",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-archive-member",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-restore-member",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-restore-ahmed",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-unsaved-changes",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-confirm-send-3",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-confirm-send-7",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-confirm-send-overdue",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-retry-failed",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-retry-failed-overdue",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "overlay / admin-desktop-retry-failed-7",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    },
+    {
+      "root": "reference / admin-desktop-states-and-recovery",
+      "font": "Teko",
+      "size": "53",
+      "weight": "500"
+    }
+  ],
+  "flows": [
+    {
+      "name": "Admin desktop \u00b7 Overview",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de33da7213c6"
+    },
+    {
+      "name": "Flow 2",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de34e7269cdc"
+    },
+    {
+      "name": "Flow 3",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de350526ad57"
+    },
+    {
+      "name": "Flow 4",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de34ec9cd1e5"
+    },
+    {
+      "name": "Flow 5",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de3502038e3f"
+    },
+    {
+      "name": "Flow 6",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de351c5ecd95"
+    },
+    {
+      "name": "Flow 7",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de35239f2482"
+    },
+    {
+      "name": "Flow 8",
+      "startingBoard": "4898fb4f-5a75-803a-8008-de352d94a5c6"
+    }
+  ],
+  "mode": "Operate",
+  "surface": "Admin desktop",
+  "generatedOn": "2026-10-30",
+  "implementation": "Editable native Penpot design and selected prototype flows; no database, fee engine, live validation or WhatsApp messages.",
+  "previews": [
+    {
+      "name": "overview",
+      "path": "design-previews/admin-desktop-overview.png"
+    },
+    {
+      "name": "attendance",
+      "path": "design-previews/admin-desktop-attendance.png"
+    },
+    {
+      "name": "members",
+      "path": "design-previews/admin-desktop-members.png"
+    },
+    {
+      "name": "payments",
+      "path": "design-previews/admin-desktop-payments.png"
+    },
+    {
+      "name": "analytics",
+      "path": "design-previews/admin-desktop-analytics.png"
+    },
+    {
+      "name": "profile",
+      "path": "design-previews/admin-desktop-profile.png"
+    },
+    {
+      "name": "member-add",
+      "path": "design-previews/admin-desktop-member-add.png"
+    },
+    {
+      "name": "payment-details",
+      "path": "design-previews/admin-desktop-payment-details.png"
+    },
+    {
+      "name": "reminders-3",
+      "path": "design-previews/admin-desktop-reminders-3.png"
+    },
+    {
+      "name": "recipients-3",
+      "path": "design-previews/admin-desktop-recipients-3.png"
+    },
+    {
+      "name": "results-3",
+      "path": "design-previews/admin-desktop-results-3.png"
+    },
+    {
+      "name": "correct-payment",
+      "path": "design-previews/admin-desktop-correct-payment.png"
+    },
+    {
+      "name": "states",
+      "path": "design-previews/admin-desktop-states.png"
+    },
+    {
+      "name": "attendance-marked",
+      "path": "design-previews/admin-desktop-attendance-marked.png"
+    },
+    {
+      "name": "record-ali",
+      "path": "design-previews/admin-desktop-record-ali.png"
+    },
+    {
+      "name": "payment-unpaid-ali",
+      "path": "design-previews/admin-desktop-payment-unpaid-ali.png"
+    },
+    {
+      "name": "correct-payment-ali",
+      "path": "design-previews/admin-desktop-correct-payment-ali.png"
+    }
+  ],
+  "review": {
+    "disposition": "ship",
+    "fullReviewScope": "13 exported desktop views plus native structural manifest.",
+    "fullReviewFinding": "One material copy formatting issue: literal backslash-n in patched desktop text.",
+    "fixesApplied": "Replaced literal backslash-n with actual line breaks in five affected text layers.",
+    "verdictScope": "Reviewer inspected all five corrected recaptures and scored the requested correction resolved, with no visible regression.",
+    "remainingMaterialFixes": [],
+    "reviewCaptureCount": 17
+  },
+  "preservedInventory": {
+    "adminMobileBoards": 31,
+    "publicDesktopBoards": 5,
+    "libraryColors": 7,
+    "libraryTypographyStyles": 8,
+    "libraryComponents": 38,
+    "libraryTokens": 17
+  }
+}
