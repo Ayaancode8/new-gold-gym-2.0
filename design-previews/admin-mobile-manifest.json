@@ -1,0 +1,522 @@
+{
+  "fileId": "61fd668e-ca9f-8100-8008-dcc8d00fd746",
+  "pageId": "4898fb4f-5a75-803a-8008-de1754a1ad81",
+  "frames": [
+    {
+      "key": "overview",
+      "id": "4898fb4f-5a75-803a-8008-de183aee58ef",
+      "name": "flows / admin-overview-start",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "attendance",
+      "id": "4898fb4f-5a75-803a-8008-de18731a8795",
+      "name": "screens / admin-attendance",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "members",
+      "id": "4898fb4f-5a75-803a-8008-de1876a9c056",
+      "name": "screens / admin-members",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payments",
+      "id": "4898fb4f-5a75-803a-8008-de1876facc48",
+      "name": "screens / admin-payments",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "analytics",
+      "id": "4898fb4f-5a75-803a-8008-de1879c3d798",
+      "name": "screens / admin-analytics",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "profile",
+      "id": "4898fb4f-5a75-803a-8008-de187a0bb786",
+      "name": "screens / admin-profile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "inactive",
+      "id": "4898fb4f-5a75-803a-8008-de187e072cb3",
+      "name": "screens / admin-inactive",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "member-add",
+      "id": "4898fb4f-5a75-803a-8008-de237752f92e",
+      "name": "screens / admin-member-add",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "member-edit",
+      "id": "4898fb4f-5a75-803a-8008-de23998bf55c",
+      "name": "screens / admin-member-edit",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-record",
+      "id": "4898fb4f-5a75-803a-8008-de23b32028c5",
+      "name": "screens / admin-payment-record",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-paid",
+      "id": "4898fb4f-5a75-803a-8008-de23cbfe7128",
+      "name": "screens / admin-payment-paid",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-unpaid",
+      "id": "4898fb4f-5a75-803a-8008-de23d9302c30",
+      "name": "screens / admin-payment-unpaid",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-correct",
+      "id": "4898fb4f-5a75-803a-8008-de23e21cc595",
+      "name": "overlay / admin-mark-unpaid",
+      "width": 390,
+      "height": 520
+    },
+    {
+      "key": "attendance-correct",
+      "id": "4898fb4f-5a75-803a-8008-de23e9bccbd1",
+      "name": "overlay / admin-correct-attendance",
+      "width": 390,
+      "height": 520
+    },
+    {
+      "key": "attendance-remove",
+      "id": "4898fb4f-5a75-803a-8008-de23feb9cfe7",
+      "name": "overlay / admin-remove-attendance",
+      "width": 390,
+      "height": 360
+    },
+    {
+      "key": "member-archive",
+      "id": "4898fb4f-5a75-803a-8008-de23ffa545cb",
+      "name": "overlay / admin-archive-member",
+      "width": 390,
+      "height": 400
+    },
+    {
+      "key": "members-archived",
+      "id": "4898fb4f-5a75-803a-8008-de24032aa611",
+      "name": "screens / admin-members-archived",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "fee-reminders",
+      "id": "4898fb4f-5a75-803a-8008-de24765067e7",
+      "name": "screens / admin-fee-reminders",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-recipients",
+      "id": "4898fb4f-5a75-803a-8008-de247f31f0f7",
+      "name": "screens / admin-reminder-recipients",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-results",
+      "id": "4898fb4f-5a75-803a-8008-de248f2bcc50",
+      "name": "screens / admin-reminder-results",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "admin-states",
+      "id": "4898fb4f-5a75-803a-8008-de2497c4128e",
+      "name": "reference / admin-states-and-recovery",
+      "width": 1894.0000000000002,
+      "height": 1424
+    },
+    {
+      "key": "payment-record-ahmed",
+      "id": "4898fb4f-5a75-803a-8008-de256b2ecfb3",
+      "name": "screens / admin-payment-record-ahmed",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-record-bilal",
+      "id": "4898fb4f-5a75-803a-8008-de256e5ec155",
+      "name": "screens / admin-payment-record-bilal",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payment-paid-ali",
+      "id": "4898fb4f-5a75-803a-8008-de2570f834b6",
+      "name": "screens / admin-payment-paid-ali",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "payments-corrected",
+      "id": "4898fb4f-5a75-803a-8008-de2573cb3241",
+      "name": "screens / admin-payments-corrected",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "fee-reminders-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de2576ec3162",
+      "name": "screens / admin-fee-reminders-overdue",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-recipients-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de257a95d6cd",
+      "name": "screens / admin-reminder-recipients-overdue",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-results-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de257d7aa0dc",
+      "name": "screens / admin-reminder-results-overdue",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "fee-reminders-week",
+      "id": "4898fb4f-5a75-803a-8008-de272598b559",
+      "name": "screens / admin-fee-reminders-week",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-recipients-week",
+      "id": "4898fb4f-5a75-803a-8008-de27288f0db1",
+      "name": "screens / admin-reminder-recipients-week",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "key": "reminder-results-week",
+      "id": "4898fb4f-5a75-803a-8008-de272bd61735",
+      "name": "screens / admin-reminder-results-week",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "shapeCount": 1729,
+  "textLayerCount": 779,
+  "interactionCount": 122,
+  "broken": 0,
+  "smallTargets": [],
+  "outside": [],
+  "sampleDate": "2026-10-30",
+  "scope": "Editable Penpot admin designs, with member forms, payment correction, three WhatsApp reminder audiences and recovery-state examples. This is a visual prototype; database rules and WhatsApp delivery require application implementation.",
+  "audiences": {
+    "within3": {
+      "start": "2026-10-30",
+      "end": "2026-11-02",
+      "total": 28,
+      "ready": 26,
+      "excluded": 2
+    },
+    "within7": {
+      "start": "2026-10-30",
+      "end": "2026-11-06",
+      "total": 49,
+      "ready": 47,
+      "excluded": 2
+    },
+    "overdue": {
+      "before": "2026-10-30",
+      "total": 12,
+      "ready": 11,
+      "excluded": 1
+    }
+  },
+  "stateExamples": 29,
+  "verification": {
+    "brokenDestinations": 0,
+    "undersizedInteractiveTargets": 0,
+    "rootContainmentViolations": 0,
+    "adminH1sCorrect": 31,
+    "adminH1sTotal": 31
+  },
+  "screens": [
+    {
+      "key": "overview",
+      "id": "4898fb4f-5a75-803a-8008-de183aee58ef",
+      "name": "flows / admin-overview-start",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-overview.png"
+    },
+    {
+      "key": "attendance",
+      "id": "4898fb4f-5a75-803a-8008-de18731a8795",
+      "name": "screens / admin-attendance",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-attendance.png"
+    },
+    {
+      "key": "members",
+      "id": "4898fb4f-5a75-803a-8008-de1876a9c056",
+      "name": "screens / admin-members",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-members.png"
+    },
+    {
+      "key": "payments",
+      "id": "4898fb4f-5a75-803a-8008-de1876facc48",
+      "name": "screens / admin-payments",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payments.png"
+    },
+    {
+      "key": "analytics",
+      "id": "4898fb4f-5a75-803a-8008-de1879c3d798",
+      "name": "screens / admin-analytics",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-analytics.png"
+    },
+    {
+      "key": "profile",
+      "id": "4898fb4f-5a75-803a-8008-de187a0bb786",
+      "name": "screens / admin-profile",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-profile.png"
+    },
+    {
+      "key": "inactive",
+      "id": "4898fb4f-5a75-803a-8008-de187e072cb3",
+      "name": "screens / admin-inactive",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-inactive.png"
+    },
+    {
+      "key": "member-add",
+      "id": "4898fb4f-5a75-803a-8008-de237752f92e",
+      "name": "screens / admin-member-add",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-member-add.png"
+    },
+    {
+      "key": "member-edit",
+      "id": "4898fb4f-5a75-803a-8008-de23998bf55c",
+      "name": "screens / admin-member-edit",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-member-edit.png"
+    },
+    {
+      "key": "payment-record",
+      "id": "4898fb4f-5a75-803a-8008-de23b32028c5",
+      "name": "screens / admin-payment-record",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-record.png"
+    },
+    {
+      "key": "payment-paid",
+      "id": "4898fb4f-5a75-803a-8008-de23cbfe7128",
+      "name": "screens / admin-payment-paid",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-paid.png"
+    },
+    {
+      "key": "payment-unpaid",
+      "id": "4898fb4f-5a75-803a-8008-de23d9302c30",
+      "name": "screens / admin-payment-unpaid",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-unpaid.png"
+    },
+    {
+      "key": "payment-correct",
+      "id": "4898fb4f-5a75-803a-8008-de23e21cc595",
+      "name": "overlay / admin-mark-unpaid",
+      "width": 390,
+      "height": 520,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-correct.png"
+    },
+    {
+      "key": "attendance-correct",
+      "id": "4898fb4f-5a75-803a-8008-de23e9bccbd1",
+      "name": "overlay / admin-correct-attendance",
+      "width": 390,
+      "height": 520,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-attendance-correct.png"
+    },
+    {
+      "key": "attendance-remove",
+      "id": "4898fb4f-5a75-803a-8008-de23feb9cfe7",
+      "name": "overlay / admin-remove-attendance",
+      "width": 390,
+      "height": 360,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-attendance-remove.png"
+    },
+    {
+      "key": "member-archive",
+      "id": "4898fb4f-5a75-803a-8008-de23ffa545cb",
+      "name": "overlay / admin-archive-member",
+      "width": 390,
+      "height": 400,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-member-archive.png"
+    },
+    {
+      "key": "members-archived",
+      "id": "4898fb4f-5a75-803a-8008-de24032aa611",
+      "name": "screens / admin-members-archived",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-members-archived.png"
+    },
+    {
+      "key": "fee-reminders",
+      "id": "4898fb4f-5a75-803a-8008-de24765067e7",
+      "name": "screens / admin-fee-reminders",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-fee-reminders.png"
+    },
+    {
+      "key": "reminder-recipients",
+      "id": "4898fb4f-5a75-803a-8008-de247f31f0f7",
+      "name": "screens / admin-reminder-recipients",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-recipients.png"
+    },
+    {
+      "key": "reminder-results",
+      "id": "4898fb4f-5a75-803a-8008-de248f2bcc50",
+      "name": "screens / admin-reminder-results",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-results.png"
+    },
+    {
+      "key": "admin-states",
+      "id": "4898fb4f-5a75-803a-8008-de2497c4128e",
+      "name": "reference / admin-states-and-recovery",
+      "width": 1894.0000000000002,
+      "height": 1424,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-admin-states.png"
+    },
+    {
+      "key": "payment-record-ahmed",
+      "id": "4898fb4f-5a75-803a-8008-de256b2ecfb3",
+      "name": "screens / admin-payment-record-ahmed",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-record-ahmed.png"
+    },
+    {
+      "key": "payment-record-bilal",
+      "id": "4898fb4f-5a75-803a-8008-de256e5ec155",
+      "name": "screens / admin-payment-record-bilal",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-record-bilal.png"
+    },
+    {
+      "key": "payment-paid-ali",
+      "id": "4898fb4f-5a75-803a-8008-de2570f834b6",
+      "name": "screens / admin-payment-paid-ali",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payment-paid-ali.png"
+    },
+    {
+      "key": "payments-corrected",
+      "id": "4898fb4f-5a75-803a-8008-de2573cb3241",
+      "name": "screens / admin-payments-corrected",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-payments-corrected.png"
+    },
+    {
+      "key": "fee-reminders-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de2576ec3162",
+      "name": "screens / admin-fee-reminders-overdue",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-fee-reminders-overdue.png"
+    },
+    {
+      "key": "reminder-recipients-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de257a95d6cd",
+      "name": "screens / admin-reminder-recipients-overdue",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-recipients-overdue.png"
+    },
+    {
+      "key": "reminder-results-overdue",
+      "id": "4898fb4f-5a75-803a-8008-de257d7aa0dc",
+      "name": "screens / admin-reminder-results-overdue",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-results-overdue.png"
+    },
+    {
+      "key": "fee-reminders-week",
+      "id": "4898fb4f-5a75-803a-8008-de272598b559",
+      "name": "screens / admin-fee-reminders-week",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-fee-reminders-week.png"
+    },
+    {
+      "key": "reminder-recipients-week",
+      "id": "4898fb4f-5a75-803a-8008-de27288f0db1",
+      "name": "screens / admin-reminder-recipients-week",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-recipients-week.png"
+    },
+    {
+      "key": "reminder-results-week",
+      "id": "4898fb4f-5a75-803a-8008-de272bd61735",
+      "name": "screens / admin-reminder-results-week",
+      "width": 390,
+      "height": 844,
+      "path": "/home/robot/Documents/Website/New_gold_gym_2.0/design-previews/admin-mobile-reminder-results-week.png"
+    }
+  ],
+  "adminH1": {
+    "fontFamily": "Teko",
+    "fontSize": 53,
+    "fontWeight": 500,
+    "lineHeight": 1
+  },
+  "review": {
+    "disposition": "ship",
+    "materialFixes": 0,
+    "scope": "All 31 native captures, member/billing/reminder revision and requested Teko H1 styling"
+  }
+}
