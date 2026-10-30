@@ -1,0 +1,41 @@
+{
+  "screens": {
+    "discover": "bd493c6e-9966-8077-8008-dcddca0a26dc",
+    "gym": "bd493c6e-9966-8077-8008-dcddf2df200b",
+    "plans": "bd493c6e-9966-8077-8008-dcde3fff79bd",
+    "reviews": "bd493c6e-9966-8077-8008-dcde6161bf7e"
+  },
+  "sheet": "bd493c6e-9966-8077-8008-dcdecf3da2f3",
+  "contact": "bd493c6e-9966-8077-8008-dcdf6b9a6435",
+  "page": "bd493c6e-9966-8077-8008-dcdb64774c50",
+  "checks": {
+    "actions": 35,
+    "broken": [],
+    "nonRootDestinations": [],
+    "smallTargets": [],
+    "external": [],
+    "reviews": {
+      "ayaan": true,
+      "bhatti": true,
+      "ratingsOnly": 2
+    },
+    "oldHours": []
+  },
+  "referenceViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "library": {
+    "components": 38,
+    "colors": 7,
+    "typographies": 8,
+    "tokens": 17
+  },
+  "review": "ship — no material fixes",
+  "previousMobilePage": "bd493c6e-9966-8077-8008-dcd102101507",
+  "brandGold": "#D8B66A",
+  "goldContrast": {
+    "onInk": 8.89,
+    "onSurface": 7.68
+  }
+}
