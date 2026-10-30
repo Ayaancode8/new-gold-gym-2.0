@@ -1,0 +1,43 @@
+:root {
+  --ink: #171c19;
+  --gold: #d8b66a;
+  --cream: #f2ede3;
+  --muted: #bab5ab;
+  --dark: #101511;
+  --surface: #222923;
+  --line: #3c433d;
+  --rating-empty: #68716a;
+  --inset: 1.25rem;
+  --radius-control: .75rem;
+  --radius-panel: 1rem;
+  --radius-sheet: 1.5rem;
+  --nav-height: calc(4.5rem + max(1.5rem, env(safe-area-inset-bottom, 0px)));
+  --header-height: 5rem;
+  color-scheme: dark;
+  font-family: var(--font-inter), sans-serif;
+  background: var(--ink);
+  color: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+button, input { font: inherit; }
+button { color: inherit; }
+a { color: inherit; text-underline-offset: .22em; }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: .55; }
+button, a { outline-offset: 4px; }
+:focus-visible { outline: 2px solid var(--gold); }
+::selection { background: var(--gold); color: var(--ink); }
+img, svg { display: block; max-width: 100%; }
+button, figure, h1, h2, h3, p { margin: 0; }
+button { border: 0; }
+html { scrollbar-color: var(--line) var(--ink); scrollbar-width: thin; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
